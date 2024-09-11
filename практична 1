@@ -1,0 +1,16 @@
+name = "Дмитро"
+lastname = "Фещак"
+age = 16
+повідоблення = "Hello world"
+
+print("Тип зміної name", type(name))
+print("Значення зміної name", name)
+
+print("Тип зміної lastname", type(lastname))
+print("Значення зміної lastname", lastname)
+
+print("Тип зміної age", type(age))
+print("Значення зміної", age)
+
+print("Тип зміної повідоблення", type(повідоблення))
+print("Значення зміної повідоблення", повідоблення)
