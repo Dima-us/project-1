@@ -1,0 +1,18 @@
+dictionary = {
+    "name": "Dima",
+    "age": 16,
+    "address": {
+        "vileg": "Tsuman",
+        "street": "Polova",
+        "house_number": 10,
+        "house": 1,
+        "floors in the house": 2
+    },
+    "is_student": False
+}
+types_dictionary = {
+    "name": str,                
+    "age": int,                 
+    "address": dict,            
+    "is_student": bool          
+}
