@@ -10,9 +10,3 @@ dictionary = {
     },
     "is_student": False
 }
-types_dictionary = {
-    "name": str,                
-    "age": int,                 
-    "address": dict,            
-    "is_student": bool          
-}
