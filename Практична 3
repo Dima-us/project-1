@@ -10,3 +10,21 @@ dictionary = {
     },
     "is_student": False
 }
+def determine_type(value):
+    if type(value) == str:
+        return "str"
+    elif type(value) == int:
+        return "int"
+    elif type(value) == bool:
+        return "bool"
+    elif type(value) == dict:
+        result = {}
+        for key, val in value.items():
+            result[key] = determine_type(val)
+        return result
+    else:
+        return "unknown"
+        
+dictionary_types = {key: determine_type(value) for key, value in dictionary.items()}
+
+print(dictionary_types)
