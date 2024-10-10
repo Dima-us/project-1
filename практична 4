@@ -6,7 +6,7 @@ def sort_list(lst):
     strings = [x for x in lst if isinstance(x, str)]
     
     numbers.sort()
-    strings.sort()
+    strings.sort(key=str.lower)
     
     return numbers + strings
 
