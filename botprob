@@ -2,6 +2,10 @@ import telebot
 
 bot = telebot.TeleBot('')
 
+@bot.message_handler(commands=['start'])
+def main(message):
+    bot.send_message(message.chat.id, 'Привіте! Мене звати RozmovBot. Не проти поспілкуватися?')
+
 @bot.message_handler(content_types=["text"])
 def same_mesag(message):
     bot.send_message(message.chat.id, message.text)
