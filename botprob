@@ -1,0 +1,28 @@
+import telebot
+
+bot = telebot.TeleBot('7827070565:AAGHx47QL6bOqyijTe4Jc4e0_R57h-ddx40')
+
+
+@bot.message_handler()
+def info(message):
+    if message.text.lower() == 'ти дурак':
+        bot.send_message(message.chat.id, 'а ви дурачок😁')
+    elif message.text.lower() == 'ти поганий':
+        bot.send_message(message.chat.id, 'а ви поганий хлопчичк(чи дівчинка😅)')
+    elif message.text.lower() == 'ти тупий':
+        bot.send_message(message.chat.id, 'а ви певно не розумніші🤓')
+    elif message.text.lower() == 'ти крутий':
+        bot.send_message(message.chat.id, 'ммм бачу ви майте хороше око якщо побачили в мені крутого мачо🦾.Щиро дякую за комплімент😘, і від вас також віє крутість справжнбого мачо😎')
+    elif message.text.lower() == 'ти хороший':
+        bot.send_message(message.chat.id, 'Що справді🥰?мм ви мене заставили почервоніти🔴')
+    elif message.text.lower() == 'ти розумний':
+        bot.send_message(message.chat.id, 'Канешно яж бот🤖.Але дякую')
+
+
+
+@bot.message_handler(commands=['start'])
+def main(message):
+    bot.send_message(message.chat.id, 'Привіте! Мене звати RozmovBot. Не проти поспілкуватися?')
+
+
+bot.polling(none_stop=True)
