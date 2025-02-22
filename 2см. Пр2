@@ -30,7 +30,7 @@ class DedDima(Dima):
     def __check_serb(self):
         if self.__serb is None:
             return "не вказано"
-        return "Високий" if self.__serb >= 4.0 else "низький"
+        return "високий" if self.__serb >= 4.0 else "низький"
 
 
 student = DedDima("Дмитро", "Фещак", 2007, "Буд. №5", "Коп'ютрена інженерія", 9.5)
